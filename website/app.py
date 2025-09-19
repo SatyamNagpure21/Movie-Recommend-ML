@@ -5,13 +5,13 @@ import requests
 #
 # url = "https://api.themoviedb.org/3/account/22316078"
 #
-# headers = {
-#     "accept": "application/json",
-#     "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5MWM1NTExMzZjMGVlOWUzYzg2M2RjN2M2YWY3NmZlMSIsIm5iZiI6MTc1ODA1NTU3NS40NjIwMDAxLCJzdWIiOiI2OGM5Y2M5NzAxMDU1NjhlNmI3OGMyYjMiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.fhUT8unxzFjWsAtgqHLNc0egWg6XNQVla4-l_dPrrdY"
-# }
+headers = {
+    "accept": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5MWM1NTExMzZjMGVlOWUzYzg2M2RjN2M2YWY3NmZlMSIsIm5iZiI6MTc1ODA1NTU3NS40NjIwMDAxLCJzdWIiOiI2OGM5Y2M5NzAxMDU1NjhlNmI3OGMyYjMiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.fhUT8unxzFjWsAtgqHLNc0egWg6XNQVla4-l_dPrrdY"
+}
 
 def fetch_poster(movie_id):
-    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=0d925498d7659c2e0b9e1c04eed7e552&language=en-US"
+    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=1c4c6a940baefc89c225d5942a4a34e0&language=en-US"
     response = requests.get(url)
     data = response.json()
 
